@@ -13,7 +13,6 @@
 		7F436F1029F5A6A000B55491 /* Shop_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F436F0F29F5A6A000B55491 /* Shop_AppApp.swift */; };
 		7F436F1229F5A6A000B55491 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F436F1129F5A6A000B55491 /* ContentView.swift */; };
 		7F436F1429F5A6A100B55491 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F436F1329F5A6A100B55491 /* Assets.xcassets */; };
-		7F436F1729F5A6A100B55491 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F436F1629F5A6A100B55491 /* Preview Assets.xcassets */; };
 		7F436F1929F5A6A100B55491 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F436F1829F5A6A100B55491 /* Persistence.swift */; };
 		7F436F1C29F5A6A100B55491 /* Shop_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F436F1A29F5A6A100B55491 /* Shop_App.xcdatamodeld */; };
 		7F436F2629F5A6A100B55491 /* Shop_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F436F2529F5A6A100B55491 /* Shop_AppTests.swift */; };
@@ -288,7 +287,6 @@
 		7F436F0F29F5A6A000B55491 /* Shop_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop_AppApp.swift; sourceTree = "<group>"; };
 		7F436F1129F5A6A000B55491 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7F436F1329F5A6A100B55491 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7F436F1629F5A6A100B55491 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7F436F1829F5A6A100B55491 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		7F436F1B29F5A6A100B55491 /* Shop_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shop_App.xcdatamodel; sourceTree = "<group>"; };
 		7F436F2129F5A6A100B55491 /* Shop AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shop AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -457,12 +455,8 @@
 		7F436F0329F5A6A000B55491 = {
 			isa = PBXGroup;
 			children = (
-				7F5F0AF329F5F03B00BCF694 /* Tests */,
 				7F5F0AF229F5F02500BCF694 /* Modules */,
-				7F436F0E29F5A6A000B55491 /* Shop App */,
-				7F436F2429F5A6A100B55491 /* Shop AppTests */,
-				7F436F2E29F5A6A100B55491 /* Shop AppUITests */,
-				7F5F0AC629F5C61300BCF694 /* AppDependencyTests */,
+				7F5F0AF329F5F03B00BCF694 /* Tests */,
 				7F436F0D29F5A6A000B55491 /* Products */,
 				7F436F9129F5A80100B55491 /* Frameworks */,
 				B56B288528EA7632F7BCE6A7 /* Pods */,
@@ -495,17 +489,8 @@
 				7F436F1329F5A6A100B55491 /* Assets.xcassets */,
 				7F436F1829F5A6A100B55491 /* Persistence.swift */,
 				7F436F1A29F5A6A100B55491 /* Shop_App.xcdatamodeld */,
-				7F436F1529F5A6A100B55491 /* Preview Content */,
 			);
 			path = "Shop App";
-			sourceTree = "<group>";
-		};
-		7F436F1529F5A6A100B55491 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				7F436F1629F5A6A100B55491 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		7F436F2429F5A6A100B55491 /* Shop AppTests */ = {
@@ -654,6 +639,7 @@
 		7F5F0AF229F5F02500BCF694 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				7F436F0E29F5A6A000B55491 /* Shop App */,
 				7F436F4429F5A6C200B55491 /* ProductsData */,
 				7F436F7129F5A79900B55491 /* ProductsDomain */,
 				7FA28C0229F5AB4B0057C094 /* ProductsPresentation */,
@@ -665,6 +651,9 @@
 		7F5F0AF329F5F03B00BCF694 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				7F436F2429F5A6A100B55491 /* Shop AppTests */,
+				7F436F2E29F5A6A100B55491 /* Shop AppUITests */,
+				7F5F0AC629F5C61300BCF694 /* AppDependencyTests */,
 				7F436F5229F5A6C200B55491 /* ProductsDataTests */,
 				7F436F7F29F5A79A00B55491 /* ProductsDomainTests */,
 				7FA28C1029F5AB4C0057C094 /* ProductsPresentationTests */,
@@ -1095,7 +1084,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F436F1729F5A6A100B55491 /* Preview Assets.xcassets in Resources */,
 				7F436F1429F5A6A100B55491 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1849,7 +1837,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Shop App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -1879,7 +1867,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Shop App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
