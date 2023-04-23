@@ -7,11 +7,14 @@
 
 import SwiftUI
 import ProductsPresentation
+import AppDependency
 
 @main
 struct Shop_AppApp: App {
     let persistenceController = PersistenceController.shared
-
+    init() {
+        AppDependencies.shared.setup()
+    }
     var body: some Scene {
         WindowGroup {
             ProductsList()

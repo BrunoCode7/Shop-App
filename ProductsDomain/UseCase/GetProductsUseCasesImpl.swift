@@ -12,10 +12,14 @@ import ProductsData
  Here is the home of business logic
  */
 
-class GetProductsUseCasesImpl:GetProductsUseCases{
+public class GetProductsUseCasesImpl:GetProductsUseCases{
     var remoteDataSource:ProductRemoteDataSource?
+    
+    public init(remoteDataSource: ProductRemoteDataSource? = nil) {
+        self.remoteDataSource = remoteDataSource
+    }
 
-    func getAllProducts() async -> Result<[Product], Error> {
+    public func getAllProducts() async -> Result<[Product], Error> {
         do{
             let data = try await remoteDataSource?.getAllProducts() ?? []
             return .success(data)

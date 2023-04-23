@@ -6,10 +6,12 @@
 //
 
 import Foundation
-import ProductsDomian
+import AppDependency
+import ProductsDomain
 
 class ProductsListViewModel:ObservableObject{
-    var getProductsUseCase: GetProductsUseCases?
+    
+    var getProductsUseCase = AppDependencies.shared.resolve(GetProductsUseCases.self)
     
     func fetchAllProducts() async{
         let response = await getProductsUseCase?.getAllProducts()

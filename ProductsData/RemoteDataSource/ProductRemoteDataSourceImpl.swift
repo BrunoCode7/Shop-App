@@ -7,8 +7,9 @@
 
 import Foundation
 
-class ProductRemoteDataSourceImpl:ProductRemoteDataSource{
-    func getAllProducts() async throws -> [Product] {
+public class ProductRemoteDataSourceImpl:ProductRemoteDataSource{
+    public init(){}
+    public func getAllProducts() async throws -> [Product] {
         guard let url = URL(string: "https://fakestoreapi.com/products") else {
             throw NetworkError.invalidURL
         }

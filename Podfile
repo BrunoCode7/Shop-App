@@ -39,6 +39,20 @@ target 'ProductsPresentation' do
 
 end
 
+target 'AppDependency' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for AppDependency
+	pod 'Swinject'
+
+  target 'AppDependencyTests' do
+    # Pods for testing
+  end
+
+end
+
+
 target 'Shop App' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
