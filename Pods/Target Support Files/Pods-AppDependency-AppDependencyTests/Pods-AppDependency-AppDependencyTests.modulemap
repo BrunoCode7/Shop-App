@@ -1,0 +1,6 @@
+framework module Pods_AppDependency_AppDependencyTests {
+  umbrella header "Pods-AppDependency-AppDependencyTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

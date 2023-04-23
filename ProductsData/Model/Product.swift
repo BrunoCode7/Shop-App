@@ -9,18 +9,18 @@ import Foundation
 
 
 public struct Product: Codable {
-    let id: Int?
-    let title: String?
-    let price: Double?
-    let description: String?
-    let category: String?
-    let image: String?
-    let rating: Rating?
+   public let id: Int?
+    public let title: String?
+    public let price: Double?
+    public let description: String?
+    public let category: String?
+    public let image: String?
+    public let rating: Rating?
 }
 
 
 // MARK: - Rating
 public struct Rating: Codable {
-    let rate: Double?
-    let count: Int?
+    public let rate: Double?
+    public let count: Int?
 }

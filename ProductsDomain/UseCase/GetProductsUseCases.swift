@@ -9,5 +9,5 @@ import Foundation
 import ProductsData
 
 public protocol GetProductsUseCases{
-     func getAllProducts() async -> Result<[Product],Error>
+     func getAllProducts() async -> Result<[ProductDom],Error>
 }

@@ -14,13 +14,13 @@ target 'ProductsData' do
 
 end
 
-target 'ProductsDomian' do
+target 'ProductsDomain' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for ProductsDomian
+  # Pods for ProductsDomain
 	pod 'Swinject'
-  target 'ProductsDomianTests' do
+  target 'ProductsDomainTests' do
     # Pods for testing
   end
 
@@ -32,7 +32,7 @@ target 'ProductsPresentation' do
 
   # Pods for ProductsPresentation
 	pod 'Swinject'
-
+	pod 'URLImage'
   target 'ProductsPresentationTests' do
     # Pods for testing
   end

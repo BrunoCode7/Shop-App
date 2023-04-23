@@ -19,10 +19,13 @@ public class GetProductsUseCasesImpl:GetProductsUseCases{
         self.remoteDataSource = remoteDataSource
     }
 
-    public func getAllProducts() async -> Result<[Product], Error> {
+    public func getAllProducts() async -> Result<[ProductDom], Error> {
         do{
             let data = try await remoteDataSource?.getAllProducts() ?? []
-            return .success(data)
+            let productDom = data.map { product in
+                ProductDom(id: product.id, title: product.title, price: product.price, description: product.description, category: product.category, image: product.image, rating: RatingDom(rate: product.rating?.rate, count: product.rating?.count))
+            }
+            return .success(productDom)
         }catch{
             return .failure(error)
         }

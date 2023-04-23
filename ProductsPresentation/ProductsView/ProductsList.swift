@@ -9,10 +9,24 @@ import SwiftUI
 
 public struct ProductsList: View {
     @ObservedObject private var viewModel = ProductsListViewModel()
-
-    public init(){}
+    
+    public init() {}
     public var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/).task {
+        Group{
+            switch viewModel.uiState {
+            case .loading:
+                ProgressView()
+            case .success(let data):
+                List(data, id: \.id) { item in
+                    ProductListItemView(title: item.title ?? "", price: item.price ?? 0.0, imageURL: URL(string: item.image ?? "")!)
+                }
+                .refreshable {
+                    await viewModel.fetchAllProducts()
+                }
+            case .error(let error):
+                Text(error.localizedDescription)
+            }
+        }.task {
             await viewModel.fetchAllProducts()
         }
     }
