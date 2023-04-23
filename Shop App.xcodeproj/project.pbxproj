@@ -457,16 +457,11 @@
 		7F436F0329F5A6A000B55491 = {
 			isa = PBXGroup;
 			children = (
+				7F5F0AF329F5F03B00BCF694 /* Tests */,
+				7F5F0AF229F5F02500BCF694 /* Modules */,
 				7F436F0E29F5A6A000B55491 /* Shop App */,
 				7F436F2429F5A6A100B55491 /* Shop AppTests */,
 				7F436F2E29F5A6A100B55491 /* Shop AppUITests */,
-				7F436F4429F5A6C200B55491 /* ProductsData */,
-				7F436F5229F5A6C200B55491 /* ProductsDataTests */,
-				7F436F7129F5A79900B55491 /* ProductsDomain */,
-				7F436F7F29F5A79A00B55491 /* ProductsDomainTests */,
-				7FA28C0229F5AB4B0057C094 /* ProductsPresentation */,
-				7FA28C1029F5AB4C0057C094 /* ProductsPresentationTests */,
-				7F5F0AB829F5C61300BCF694 /* AppDependency */,
 				7F5F0AC629F5C61300BCF694 /* AppDependencyTests */,
 				7F436F0D29F5A6A000B55491 /* Products */,
 				7F436F9129F5A80100B55491 /* Frameworks */,
@@ -654,6 +649,27 @@
 				7F5F0AF029F5E73600BCF694 /* ProductListItem.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		7F5F0AF229F5F02500BCF694 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				7F436F4429F5A6C200B55491 /* ProductsData */,
+				7F436F7129F5A79900B55491 /* ProductsDomain */,
+				7FA28C0229F5AB4B0057C094 /* ProductsPresentation */,
+				7F5F0AB829F5C61300BCF694 /* AppDependency */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		7F5F0AF329F5F03B00BCF694 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				7F436F5229F5A6C200B55491 /* ProductsDataTests */,
+				7F436F7F29F5A79A00B55491 /* ProductsDomainTests */,
+				7FA28C1029F5AB4C0057C094 /* ProductsPresentationTests */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		7FA28C0229F5AB4B0057C094 /* ProductsPresentation */ = {
