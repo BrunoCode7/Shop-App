@@ -1,0 +1,6 @@
+framework module Pods_ProductsData_ProductsDataTests {
+  umbrella header "Pods-ProductsData-ProductsDataTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
